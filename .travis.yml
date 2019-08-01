@@ -10,6 +10,10 @@ stages:
   - migrate
 if: tag IS blank
 
+services:
+  # ...
+  - tracker-service-registry
+
 jobs:
   include:
     - stage: build and publish
